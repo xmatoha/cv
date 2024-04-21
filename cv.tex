@@ -1,0 +1,130 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[scale=0.75]{geometry}
+\usepackage[english]{babel}
+\usepackage{setspace}
+\nopagenumbers{}   
+\onehalfspacing
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+\name{Martin}{Hablák}
+\title{Curriculum Vitae}
+\born{22 September 1981}                                 % optional, remove / comment the line if not wanted
+\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+421~(905)~121~126}
+\email{martin.hablak@gmail.com}    
+\address{Jána Stanislava 47}{Bratislava 84105}{Slovakia}
+\social[github]{xmatoha}   
+
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2005--2007}{Msc}{Slovak Technical University}{Bratislava} {\textit{Faculty of Electrical Engineering and Informatics}}{}  % arguments 3 to 6 can be left empty
+\cventry{2000--2005}{Bsc}{Slovak Technical University}{Bratislava} {\textit{Faculty of Informatics and Information Technology}}{}  % arguments 3 to 6 can be left empty
+
+
+\section{Experience}
+\cventry{2020--present}{Cloud Pak For Data Platform Architect}{IBM}{Bratislava}{}{Building Cloud Pak For Data Platform for internal IBM users.
+\begin{itemize}%
+\item Developed boarding process 
+\item Listening to user needs and adjusting platform offering based on that
+\item Keeping it up to date, performant, avilable  
+\end{itemize}}
+
+
+\cventry{2020--present}{MLOps Engineer}{IBM}{Bratislava}{}{Supporting Data scientist with warious software related tasks. 
+\begin{itemize}%
+\item Services to integrate with Cloud Pak For Data
+\item Carrot library helping Data scientsist and Data engineers bootstraping their projects
+\end{itemize}}
+
+\cventry{2018--2020}{Software Engineer}{IBM}{Bratislava}{}{Was helping teams to adopt Exterme programming practicies. Developing devops platform for our internal software teams. 
+\begin{itemize}%
+\item Delivered DevOps platform on JenkinX
+\item Led Extreme programming trainigns
+\end{itemize}}
+
+
+\cventry{2014--2018}{Lead Software Engineer}{IBM}{Bratislava}{}{Was responsible for development of IBM internal employee directory service. \newline{}%
+Solution served whole IBM population and also applications which required employee information/picture. Solution consisted of multiple microservices written in Java (Websphere Librety Profile, Vertx). It had advanced ``google like'' search capabilities. Solution integrated with various internal systems using batch processing, realtime processing. 
+\begin{itemize}%
+\item Delivered modern IBM directory service
+\item Achieved good availablity and performance to witstand load from employes and mainly applications which were dependent on directory service.
+\end{itemize}}
+
+\cventry{2012--2014}{Software Developer}{IBM}{Bratislava}{}{DataStage/Java Developer in Finance. Data preparation for machine learning algorithms predicting IBM outer close revenue.
+\begin{itemize}%
+\item Develop DataStage extension to integrate with IBM TM1 OLAP Cube
+\item Develop DataStage jobs to prepare data for machine learning algorithms
+\end{itemize}}
+
+\cventry{2010--2012}{Software Developer}{SwissRe}{Bratislava}{}{Java Developer in Finance, working on new system for Fiance Reporting. Software was build on Websphere application server running of IBM System Z.
+\begin{itemize}%
+\item Rewriting Cobol modules to Java
+\item Was part of developing modern data processing platform
+\end{itemize}}
+
+\cventry{2007--2010}{Software Developer}{IBM}{Bratislava}{}{ETL developer Java Lotus Notes
+\begin{itemize}%
+\item Develop ETL library to transfer data from Lotus Notes to DB2
+\item Manage system of nightly data loads of Sales Opportunities
+\end{itemize}}
+
+
+\section{Skills}
+\cvskilllegend*[1em]{}
+\setcvskillcolumns[][0.45][\widthof{``Year''}]%
+\setcvskillcolumns[][][\widthof{``Year''}]%
+\setcvskilllegendcolumns[][0.6]%
+\cvskillhead[-0.1em]
+\cvskillentry*{Language:}{4}{Python}{3}{Implemented MLOps Tooling Using Python, Rest services using FastAPI}
+\cvskillentry*{Language:}{3}{Golang}{1}{Implemented Kubernetes automation using Golang}
+\cvskillentry*{Language:}{4}{NodeJs}{4}{Implemented multiple NodeJs services in ExpressJs and Fastify}
+\cvskillentry*{Language:}{2}{Clojure}{1}{Used Clojure for Extreme Programming Training}
+\cvskillentry*{Language:}{4}{Java}{7}{Used Java/Spring/Vert.X implementing REST services for various projects}
+
+\cvskillentry*{Platform:}{3}{Kubernetes/Docker}{3}{Configured maintained and supported Openshift Clusters with Cloud Pak For Data platform}
+
+\cvskillentry*{MLOPS:}{2}{DVC}{1}{Implemented solution integrating DVC with Watson Machine learning service}
+
+\cvskillentry*{MLOPS:}{3}{MLFlow}{3}{Experimenting with MLFlow for experiment tracking and model registry for our DataScientists}
+
+\cvskillentry*{MLOPS:}{1}{Kubeflow}{1}{Supported Kubeflow instance for DataScientsits}
+
+\cvskillentry*{MLOPS:}{3}{Cloud Pak For Data}{3}{Configured, maintained  Openshift Clusters with Cloud Pak For Data platform}
+
+
+
+\cvskillentry*{Database:}{4}{Couchdb}{4}{Created directory service service using CouchDb as main datastore}
+\cvskillentry*{Database:}{3}{Cassandra}{1}{Created IBM internal news page using Cassandra}
+\cvskillentry*{Database:}{2}{Redis}{2}{Used Redis as cashe for directory service}
+\cvskillentry*{Database:}{3}{Solr/Elastic Search}{4}{Used Solr as search engine for directory service}
+\cvskillentry*{Database:}{3}{Postgresql/Db2 - Releationla Databases}{10}{Used relational database on various project as main datastore}
+
+\cvskillentry*{Programming Technique:}{3}{Extreme Programming}{3}{Worked as Extreme Programming coach. Pracitcing Test Drive Development, Behaviour Drive Development, DevSecOps techniques}
+\cvskillentry*{Soft skill:}{1}{Coaching}{1}{Attended business coaching education. Practicing coaching technique at work.}
+
+
+\section{Interests}
+\cvitem{Outdoor sports}{Cykling, Ski mountaineering, Climbing, ...}
+\cvitem{Reading}{lately SciFi}
+\cvitem{Microbit}{Exploring microbit with my kids}
+
+
+\end{document}
+
