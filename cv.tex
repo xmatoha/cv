@@ -1,4 +1,14 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{titlesec}
+\usepackage{needspace}
+
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+  [\needspace{5\baselineskip}]
+
+   
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 \usepackage[scale=0.75]{geometry}
@@ -41,30 +51,39 @@
 \section{Experience}
 \cventry{2020--present}{Cloud Pak For Data Platform Architect}{IBM}{Bratislava}{}{Building Cloud Pak For Data Platform for internal IBM users.
 \begin{itemize}%
-\item Developed boarding process 
-\item Listening to user needs and adjusting platform offering based on that
-\item Keeping it up to date, performant, avilable  
+\item I designed platform architecture
+\item Developed disaster recovery procedures, monitoring and healtcheck to improve availablity
+\item Automated installation, upgrading and configuration process
+\item Developed boarding process using ServiceNow using Python
 \end{itemize}}
 
-
-\cventry{2020--present}{MLOps Engineer}{IBM}{Bratislava}{}{Supporting Data scientist with warious software related tasks. 
+\cventry{2020--present}{MLOps Engineer}{IBM}{Bratislava}{}{Supporting Data scientist with various software related tasks. 
 \begin{itemize}%
-\item Services to integrate with Cloud Pak For Data
-\item Carrot library helping Data scientsist and Data engineers bootstraping their projects
+\item Developed services to integrate with Cloud Pak For Data (Python)
+\item Contributed to library helping Data Scientist and Data Engineers bootstrapping their projects (Python)
 \end{itemize}}
 
-\cventry{2018--2020}{Software Engineer}{IBM}{Bratislava}{}{Was helping teams to adopt Exterme programming practicies. Developing devops platform for our internal software teams. 
+\cventry{2018--2020}{Software Engineer}{IBM}{Bratislava}{}{Helping teams to adopt Extreme programming practices. Developing DevOps platform for our internal software teams. 
 \begin{itemize}%
 \item Delivered DevOps platform on JenkinX
-\item Led Extreme programming trainigns
+\item Created custom automation using Golang  
+\item Leading Extreme programming training
 \end{itemize}}
 
-
-\cventry{2014--2018}{Lead Software Engineer}{IBM}{Bratislava}{}{Was responsible for development of IBM internal employee directory service. \newline{}%
-Solution served whole IBM population and also applications which required employee information/picture. Solution consisted of multiple microservices written in Java (Websphere Librety Profile, Vertx). It had advanced ``google like'' search capabilities. Solution integrated with various internal systems using batch processing, realtime processing. 
+\cventry{2017--2018}{Software Engineer}{IBM}{Bratislava}{}{I was responsible for development of internal IBM news service {}%
 \begin{itemize}%
-\item Delivered modern IBM directory service
-\item Achieved good availablity and performance to witstand load from employes and mainly applications which were dependent on directory service.
+\item Implemented backend services for IBM news service in NodeJS using Cassandra and Solr as datastores
+\end{itemize}}
+  
+
+\cventry{2014--2018}{Lead Software Engineer}{IBM}{Bratislava}{}{I was responsible for development of IBM internal employee directory service. \newline{}%
+Solution served whole IBM population. It consisted of multiple microservices written in Java (Websphere Librety Profile, Vertx). It had advanced ``google like'' search capabilities. It integrated with various internal systems using batch processing, real time processing. 
+\begin{itemize}%
+\item Designed and implemented services which were used by almost any application in IBM
+\item Developed CI/CD process using Ansible  
+\item Services used various datastores. CouchDb for holding employee data. Solr as search engine. Redis as pass through cache.
+\item Services were implemented using Websphere Librety.
+\item Performance critical services were implemented in VertX.  
 \end{itemize}}
 
 \cventry{2012--2014}{Software Developer}{IBM}{Bratislava}{}{DataStage/Java Developer in Finance. Data preparation for machine learning algorithms predicting IBM outer close revenue.
@@ -96,35 +115,32 @@ Solution served whole IBM population and also applications which required employ
 \cvskillentry*{Language:}{3}{Golang}{1}{Implemented Kubernetes automation using Golang}
 \cvskillentry*{Language:}{4}{NodeJs}{4}{Implemented multiple NodeJs services in ExpressJs and Fastify}
 \cvskillentry*{Language:}{2}{Clojure}{1}{Used Clojure for Extreme Programming Training}
-\cvskillentry*{Language:}{4}{Java}{7}{Used Java/Spring/Vert.X implementing REST services for various projects}
+\cvskillentry*{Language:}{4}{Java}{7}{Used Java/Websphere/Spring/Vert.X implementing REST services for various projects}
 
 \cvskillentry*{Platform:}{3}{Kubernetes/Docker}{3}{Configured maintained and supported Openshift Clusters with Cloud Pak For Data platform}
 
-\cvskillentry*{MLOPS:}{2}{DVC}{1}{Implemented solution integrating DVC with Watson Machine learning service}
+\cvskillentry*{MLOps:}{2}{DVC}{1}{Implemented solution integrating DVC with Watson Machine learning service}
 
-\cvskillentry*{MLOPS:}{3}{MLFlow}{3}{Experimenting with MLFlow for experiment tracking and model registry for our DataScientists}
+\cvskillentry*{MLOps}{3}{MLFlow}{3}{Experimenting with MLFlow for experiment tracking and model registry for our Data Scientists}
 
-\cvskillentry*{MLOPS:}{1}{Kubeflow}{1}{Supported Kubeflow instance for DataScientsits}
-
-\cvskillentry*{MLOPS:}{3}{Cloud Pak For Data}{3}{Configured, maintained  Openshift Clusters with Cloud Pak For Data platform}
+\cvskillentry*{MLOps:}{3}{Cloud Pak For Data}{3}{Configured, maintained  Openshift Clusters with Cloud Pak For Data platform}
 
 
 
-\cvskillentry*{Database:}{4}{Couchdb}{4}{Created directory service service using CouchDb as main datastore}
+\cvskillentry*{Database:}{4}{Couchdb}{4}{Created directory service service using CouchDb as main data store}
 \cvskillentry*{Database:}{3}{Cassandra}{1}{Created IBM internal news page using Cassandra}
-\cvskillentry*{Database:}{2}{Redis}{2}{Used Redis as cashe for directory service}
+\cvskillentry*{Database:}{2}{Redis}{2}{Used Redis as cache for directory service}
 \cvskillentry*{Database:}{3}{Solr/Elastic Search}{4}{Used Solr as search engine for directory service}
-\cvskillentry*{Database:}{3}{Postgresql/Db2 - Releationla Databases}{10}{Used relational database on various project as main datastore}
+\cvskillentry*{Database:}{3}{Postgresql/Db2 - Relational Databases}{10}{Used relational database on various project as main data store}
 
-\cvskillentry*{Programming Technique:}{3}{Extreme Programming}{3}{Worked as Extreme Programming coach. Pracitcing Test Drive Development, Behaviour Drive Development, DevSecOps techniques}
+\cvskillentry*{Programming Technique:}{3}{Extreme Programming}{3}{Worked as Extreme Programming coach. Practicing Test Drive Development, Behavior Drive Development, DevSecOps techniques}
 \cvskillentry*{Soft skill:}{1}{Coaching}{1}{Attended business coaching education. Practicing coaching technique at work.}
 
 
 \section{Interests}
-\cvitem{Outdoor sports}{Cykling, Ski mountaineering, Climbing, ...}
+\cvitem{Outdoor sports}{Cycling, Ski mountaineering, Climbing, ...}
 \cvitem{Reading}{lately SciFi}
 \cvitem{Microbit}{Exploring microbit with my kids}
 
 
 \end{document}
-
